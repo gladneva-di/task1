@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>
+  </title>
+</head>
+
+<body>
+  <div id="root">
+    <header class="header ">
+    </header>
+    <main class="main">
+      <div id="begin" class="block first__block">
+        <div class="header__block inner">
+          <a href="#begin">
+            <svg class="logo">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+          <h1>soleum trading</h1>
+          <button class="burger">
+            <span class="burger__item burger__item_top"></span>
+            <span class="burger__item burger__item_middle"></span>
+            <span class="burger__item burger__item_bottom"></span>
+          </button>
+          <!-- modal -->
+          <div class="modal__menu">
+            <ul class="menu__list">
+              <li><a href="#statement" class="menu_link"><span>(01)</span>Statement</a></li>
+              <li><a href="#value_statement" class="menu_link"><span>(02)</span>Value Statement</a></li>
+              <li><a href="#about_us" class="menu_link"><span>(03)</span>About Us</a></li>
+              <li><a href="#our_products" class="menu_link"><span>(04)</span>Our Products</a></li>
+              <li><a href="#contact_us" class="menu_link"><span>(05)</span>Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__bottom-block inner">
+          <div class="main__left-side">
+            <h2>Menu:</h2>
+            <ul class="menu__list">
+              <li><a href="#statement" class="menu_link"><span>(01)</span>Statement</a></li>
+              <li><a href="#value_statement" class="menu_link"><span>(02)</span>Value Statement</a></li>
+              <li><a href="#about_us" class="menu_link"><span>(03)</span>About Us</a></li>
+              <li><a href="#our_products" class="menu_link"><span>(04)</span>Our Products</a></li>
+              <li><a href="#contact_us" class="menu_link"><span>(05)</span>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="main__right-side">
+            <p class="main__right-side-info">Energize<br> the&nbsp;world with our<br> premium oil</p>
+            <p class="copyright">All rights reserved <span>©2024</span></p>
+          </div>
+        </div>
+        <a href="#our_products" class="scroll__down">Scroll down</a>
+
+      </div>
+      <div id="our_products" class="block second__block">
+        <div class="second__block_box inner">
+          <div class="menu__block">
+            <span>Our products:</span>
+            <ul class="menu__list menu__list-1">
+              <li class="menu__list_1"><span>(01)</span> gasoil</li>
+              <li class="menu__list_2"><span>(02)</span> naphta</span></li>
+            </ul>
+          </div>
+          <!-- Slider main container -->
+          <div class="cases__swiper_wrap inner">
+            <div class="swiper cases__swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide_item">
+                    <h1 class="swiper-slide_title">gasoil</h1>
+                    <div class="image__block">
+                      <div class="card first__card">
+                        <svg class="card_icon">
+                          <use xlink:href="#card_icon"></use>
+                        </svg>
+                        <p class="card__text">Straight run gasoil.<br> High Sulphur gasoil (HSGO)</p>
+                      </div>
+                      <div class="card second__card">
+                        <img src="./images/second__card.png">
+                      </div>
+                    </div>
+                    <p class="slide__text-first slide1__text-first">Suitable for a variety of industrial applications,
+                      our gasoil is the energy solution businesses rely on for efficient and reliable operation.</p>
+                    <p class="slide__text-second slide1__text-second">Gasoil, a key component in the global energy mix,
+                      powers industries and vehicles across the globe. At Soleum Trading, our gasoil stands out for its
+                      quality and consistency, meeting rigorous international standards.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide_item">
+                    <h1 class="swiper-slide_title">naphta</h1>
+                    <div class="image__block">
+                      <div class="first__card">
+                        <svg class="card_icon">
+                          <use xlink:href="#card_icon"></use>
+                        </svg>
+                        <p class="card__text"><span>naphta</span> <br>the versatile hydrocarbon mixture</p>
+                      </div>
+                      <div class="second__card">
+                        <img src="./images/second__card-2.png">
+                      </div>
+                    </div>
+                    <p class="slide__text-first slide2__text-first">
+                      Naphtha — the versatile hydrocarbon mixture, is essential in the production of high-value
+                      petrochemicals and as a heavy plant fuel.
+                    </p>
+                    <p class="slide__text-second slide2__text-second">Our naphtha product line is characterized by its
+                      purity and adaptability, making it a preferred choice for industry leaders in petrochemical
+                      manufacturing. At Soleum Trading, we ensure our naphtha facilitates smooth production processes
+                      and innovation in petrochemical industries.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="cases__swiper-button-box">
+              <div class="cases__swiper-button cases__swiper-button-prev">
+                <!-- <svg class="swiper__arrow_left">
+                  <use xlink:href="#arrow__left"></use>
+                </svg> -->
+                <img class="swiper__arrow_left" src="./images/arrow_left.svg">
+              </div>
+              <div class="cases__swiper-button cases__swiper-button-next">
+                <!-- <svg class="swiper__arrow_right">
+                  <use xlink:href="#arrow__right"></use>
+                </svg> -->
+                <img class="swiper__arrow_right" src="./images/arrow_right.svg">
+              </div>
+            </div>
+
+            <!-- If we need scrollbar -->
+          </div>
+        </div>
+        <a href="mailto:legal@soleumtrading.ae" class="second__block_contacts">
+          <p>write us</p>
+          <img src="./images/write_us.svg">
+        </a>
+      </div>
+      <div class="block third__block">
+        <!-- <img src="./images/third_picture.png" class="third__block_img"> -->
+      </div>
+      <div class="block fourth__block">
+        <div class="fourth__block_columns">
+          <div class="block_row fourth__block_column">
+            <div class="block__item block__item_top block__item_top-left">
+              <h2 id="statement">mission statement</h2>
+              <p>At Soleum Trading, we are committed to energizing the world with our premium oil products, fostering
+                innovation in energy trading, and empowering global communities.</p>
+            </div>
+            <div class="block__item block__item_bottom block__item_bottom-left">
+              <p>Our mission is to facilitate seamless trade of gasoil and naphtha,
+                ensuring reliability, efficiency, and environmental stewardship in every transaction.</p>
+            </div>
+          </div>
+          <div class="block_row fourth__block_column">
+            <div class="block__item block__item_top block__item_top-right">
+              <h2 id="value_statement">value statement</h2>
+              <p>Our dedication to excellence drives us to continuously improve our practices, support our team’s
+                growth, and contribute positively to the global economy.</p>
+            </div>
+            <div class="line line__top"></div>
+            <div class="block__item block__item_bottom block__item_bottom-right">
+              <p>Our core values are anchored in integrity, transparency, and
+                sustainability. We believe in creating lasting partnerships basedon trust, delivering exceptional value
+                to
+                our clients, and advancing the pursuit of cleaner energy solutions.</p>
+              <div class="line line__bottom"></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fourth__block_title">Working with us is a comfortable cooperation</h2>
+
+      </div>
+      <div id="about_us" class="block fifth__block">
+        <div id="about_us" class="block_row fifth__block_row fifth__block_row-top inner">
+          <div class="block__item fifth__block_item-left">
+            <span>About us</span>
+            <p>Soleum Trading represents the dynamic convergence of youthful vigor and seasoned expertise in the oil
+              trading industry.</p>
+          </div>
+          <div class="line fifth__block_line"></div>
+          <div class="block__item fifth__block_item-right">
+            <p>Our company is built on the deep industry experience and unparalleled expertise of our team.</p>
+          </div>
+        </div>
+        <div class="block_row fifth__block_row fifth__block_row-bottom inner">
+          <div class="block__item fifth__block_item-left">
+            <svg class="fifth_s">
+              <use xlink:href="#fifth_s"></use>
+            </svg>
+          </div>
+          <div class="block__item fifth__block_item-right">
+            <div class="block_text">
+              <p>With a focus on gasoil and naphtha, we not only aim to lead in our field but also to innovate and
+                redefine what it means to be an energy trader.</p>
+              <p>Our agile approach, coupled with a profound understanding of market dynamics, enables us to navigate
+                the complexities of global trade, delivering value and reliability to our partners and clients</p>
+            </div>
+            <a href="#our_products">
+              <span class="fifth__block_item-link">
+                View our products
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contact_us" class="block sixth__block">
+        <div class="block_row sixth__block_row sixth__block_row-top inner">
+          <div class="sixth__block_top">
+            <p class="sixth__block_item sixth__block_item-first">Contact us</p>
+            <p class="sixth__block_item sixth__block_item-second">feel free to write us a message.<br> We will answer
+              all your questions<br> in detail</p>
+            <p class="sixth__block_item copyright">All rights reserved <span>©2024</span></p>
+          </div>
+          <span class="sixth__block_mail">legal@soleumtrading.ae</span>
+        </div>
+      </div>
+
+  </div>
+
+
+  </main>
+  </div>
+  <!-- svg спрайты -->
+  <svg width="0" height="0" class="hidden">
+    <!-- logo -->
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 47" id="logo">
+      <path
+        d="M29.0323 25.9954C28.8807 25.3868 28.6086 24.8247 28.2365 24.3514C27.885 23.898 27.4627 23.521 26.9905 23.2389C26.6042 23.0232 26.2049 22.8382 25.7957 22.6854C25.4476 22.5504 25.0903 22.4478 24.7273 22.3785C23.8391 22.2168 22.615 22.0332 21.0623 21.8305C19.5097 21.6277 18.5095 21.4907 18.0033 21.4112C17.6029 21.3584 17.2126 21.2335 16.8474 21.0413C16.6757 20.9605 16.5189 20.8443 16.385 20.6988C16.3098 20.5412 16.2849 20.3594 16.3144 20.1836C16.3528 19.9976 16.4372 19.8275 16.5578 19.6932C16.9798 19.2628 17.4925 18.961 18.0471 18.8163C18.8448 18.569 19.6709 18.4582 20.4978 18.4875C21.3126 18.4888 22.1236 18.6123 22.9094 18.8547C23.5737 19.0511 24.2028 19.3755 24.7687 19.8137C25.1791 20.1392 25.5337 20.5459 25.8151 21.0139L26.1364 21.5619L29.0299 19.315L28.6575 18.7807C27.8273 17.6142 26.7434 16.709 25.5109 16.1529C24.1245 15.4879 22.6372 15.1298 21.1305 15.098C17.064 15.0021 14.3895 16.1118 13.18 18.4245C12.7584 19.2021 12.5866 20.119 12.6933 21.0221C12.8147 21.8804 13.1914 22.6668 13.7616 23.2526C14.5029 23.9868 15.3997 24.4936 16.3656 24.724C17.8268 25.0834 19.307 25.337 20.7971 25.483C21.8212 25.5863 22.8399 25.75 23.8488 25.9735C24.3121 26.042 24.7498 26.2524 25.1143 26.5818C25.2281 26.6994 25.3192 26.8421 25.3819 27.001C25.4308 27.1335 25.45 27.2775 25.4379 27.4203C25.4106 27.5656 25.3463 27.6989 25.253 27.8039C25.0668 28.0295 24.8458 28.2152 24.6008 28.3519C23.805 28.7684 22.6928 28.9657 21.2887 28.8999C20.0429 28.8873 18.8082 28.6342 17.6383 28.1519C17.2105 27.9535 16.8027 27.7046 16.4215 27.4093C16.1588 27.229 15.9097 27.0247 15.6768 26.7983L15.4165 26.4914L15.0879 26.0776L12.2188 28.4286L12.6617 29.1082C12.8376 29.336 13.0332 29.5434 13.2457 29.7274C13.5615 30.0295 13.8922 30.3113 14.2362 30.5714C15.2162 31.2538 16.2967 31.7335 17.4266 31.988C18.6779 32.3032 19.9554 32.4676 21.2376 32.4785H21.3349C22.5276 32.483 23.7172 32.3425 24.8831 32.0593C25.89 31.8551 26.8398 31.3856 27.6549 30.6892C28.2679 30.1259 28.7262 29.378 28.9763 28.5328C29.2197 27.7207 29.2392 26.8448 29.0323 26.0201V25.9954Z"
+        fill="#3C5851"></path>
+      <path
+        d="M20.442 46.464C15.0222 46.4575 9.8261 44.0304 5.99373 39.7153C2.16136 35.4002 0.0057976 29.5495 0 23.4471C0.0057976 17.3446 2.16136 11.494 5.99373 7.17888C9.8261 2.86379 15.0222 0.436704 20.442 0.430176C25.8618 0.436704 31.0579 2.86379 34.8903 7.17888C38.7227 11.494 40.8782 17.3446 40.884 23.4471C40.8782 29.5495 38.7227 35.4002 34.8903 39.7153C31.0579 44.0304 25.8618 46.4575 20.442 46.464ZM20.442 3.71831C15.7966 3.72411 11.3428 5.80453 8.05798 9.50314C4.77313 13.2017 2.92544 18.2165 2.92029 23.4471C2.92544 28.6777 4.77313 33.6924 8.05798 37.391C11.3428 41.0896 15.7966 43.1701 20.442 43.1759C25.0875 43.1701 29.5412 41.0896 32.8261 37.391C36.1109 33.6924 37.9586 28.6777 37.9638 23.4471C37.9586 18.2165 36.1109 13.2017 32.8261 9.50314C29.5412 5.80453 25.0875 3.72411 20.442 3.71831Z"
+        fill="#3C5851"></path>
+    </symbol>
+    <!-- card icon -->
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="card_icon">
+      <circle cx="12" cy="12" r="12" fill="#EAB472"></circle>
+      <path
+        d="M12 18.0729C11.4747 18.073 10.9545 17.9505 10.4692 17.7125C9.98381 17.4745 9.54282 17.1256 9.17136 16.6858C8.79991 16.2459 8.50528 15.7237 8.30429 15.149C8.10331 14.5742 7.99991 13.9582 8 13.3362C8 10.715 12 5.41357 12 5.41357C12 5.41357 16 10.7234 16 13.3362C16.0007 13.9585 15.8978 14.5748 15.697 15.1499C15.4963 15.725 15.2017 16.2475 14.8301 16.6875C14.4585 17.1275 14.0173 17.4764 13.5316 17.7141C13.046 17.9518 12.5255 18.0738 12 18.0729Z"
+        fill="#3C5851"></path>
+    </symbol>
+    <!-- arrow left -->
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13" id="arrow__left">
+      <path
+        d="M8.07542 1.14363L8.17599 1.04662L8.07542 0.949618L7.44286 0.339624L7.34935 0.249489L7.25585 0.339624L0.996475 6.37562L0.895898 6.47262L0.996475 6.56963L7.31122 12.6594L7.40473 12.7495L7.4983 12.6594L8.13079 12.0494L8.23137 11.9524L8.13079 11.8554L3.14084 7.0432L14.563 7.0432L14.6978 7.0432L14.6978 6.90854L14.6978 6.03684L14.6978 5.90211L14.563 5.90211L3.14084 5.90211L8.07542 1.14363Z"
+        fill="#EAB472"></path>
+    </symbol>
+    <!-- arrow right -->
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13" id="arrow__right">
+      <path
+        d="M6.83767 11.8566L6.7371 11.9536L6.83767 12.0506L7.47023 12.6606L7.56373 12.7508L7.65724 12.6606L13.9166 6.62463L14.0172 6.52762L13.9166 6.43062L7.60186 0.340867L7.50836 0.250732L7.41479 0.340867L6.7823 0.950859L6.68172 1.04787L6.7823 1.14487L11.7722 5.95704H0.350063H0.215332V6.0917V6.96341V7.09814H0.350063H11.7722L6.83767 11.8566Z"
+        fill="#3C5851"></path>
+    </symbol>
+    <!-- s -->
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 64" id="fifth_s">
+      <path
+        d="M44.7373 35.5067C44.5037 34.6614 44.0845 33.8807 43.5111 33.2233C42.9694 32.5937 42.3186 32.07 41.5911 31.6782C40.9958 31.3786 40.3805 31.1217 39.7499 30.9094C39.2135 30.722 38.6629 30.5794 38.1036 30.4832C36.7348 30.2587 34.8486 30.0037 32.4561 29.7221C30.0636 29.4405 28.5223 29.2502 27.7423 29.1398C27.1253 29.0664 26.5239 28.893 25.9611 28.626C25.6965 28.5138 25.4549 28.3525 25.2486 28.1503C25.1327 27.9315 25.0943 27.6789 25.1398 27.4349C25.1989 27.1764 25.3289 26.9402 25.5148 26.7536C26.1651 26.1559 26.9551 25.7367 27.8098 25.5358C29.0389 25.1923 30.3119 25.0383 31.5861 25.0791C32.8417 25.0809 34.0914 25.2524 35.3024 25.5891C36.326 25.8618 37.2953 26.3125 38.1674 26.9211C38.7998 27.3731 39.3461 27.9379 39.7798 28.588L40.2749 29.3491L44.7336 26.2285L44.1599 25.4863C42.8805 23.8661 41.2102 22.6089 39.3111 21.8367C37.1747 20.913 34.8829 20.4156 32.5611 20.3715C26.2948 20.2383 22.1736 21.7796 20.3098 24.9916C19.6602 26.0716 19.3955 27.3451 19.5598 28.5994C19.747 29.7914 20.3274 30.8837 21.2061 31.6972C22.3484 32.717 23.7303 33.4208 25.2186 33.7409C27.4703 34.2401 29.7512 34.5922 32.0474 34.7951C33.6255 34.9385 35.1952 35.1659 36.7499 35.4763C37.4638 35.5715 38.1383 35.8637 38.6999 36.3211C38.8752 36.4845 39.0156 36.6827 39.1123 36.9034C39.1876 37.0874 39.2172 37.2873 39.1986 37.4857C39.1564 37.6875 39.0574 37.8726 38.9136 38.0185C38.6268 38.3318 38.2863 38.5897 37.9086 38.7796C36.6824 39.3581 34.9686 39.6321 32.8049 39.5407C30.8851 39.5231 28.9826 39.1717 27.1798 38.5018C26.5207 38.2262 25.8922 37.8805 25.3048 37.4704C24.9 37.22 24.5162 36.9362 24.1573 36.6218L23.7561 36.1955L23.2499 35.6209L18.8286 38.8862L19.5111 39.83C19.7822 40.1463 20.0837 40.4345 20.4111 40.6901C20.8977 41.1096 21.4073 41.5009 21.9374 41.8622C23.4476 42.81 25.1125 43.4763 26.8536 43.8297C28.7818 44.2675 30.7503 44.4958 32.7261 44.511H32.8761C34.714 44.5173 36.5471 44.322 38.3436 43.9287C39.8953 43.6451 41.3589 42.9931 42.6149 42.0259C43.5595 41.2434 44.2657 40.2048 44.6511 39.0308C45.0261 37.903 45.0562 36.6864 44.7373 35.541V35.5067Z"
+        fill="#EAB472"></path>
+      <path
+        d="M31.5 63.9355C23.1484 63.9265 15.1415 60.5555 9.236 54.5624C3.33054 48.5692 0.00893377 40.4434 0 31.9678C0.00893377 23.4922 3.33054 15.3663 9.236 9.37315C15.1415 3.38 23.1484 0.00906643 31.5 0C39.8516 0.00906643 47.8585 3.38 53.764 9.37315C59.6695 15.3663 62.9911 23.4922 63 31.9678C62.9911 40.4434 59.6695 48.5692 53.764 54.5624C47.8585 60.5555 39.8516 63.9265 31.5 63.9355ZM31.5 4.56682C24.3416 4.57488 17.4786 7.46435 12.4169 12.6013C7.35512 17.7382 4.50794 24.7031 4.5 31.9678C4.50794 39.2325 7.35512 46.1973 12.4169 51.3343C17.4786 56.4712 24.3416 59.3606 31.5 59.3687C38.6584 59.3606 45.5214 56.4712 50.5831 51.3343C55.6449 46.1973 58.4921 39.2325 58.5 31.9678C58.4921 24.7031 55.6449 17.7382 50.5831 12.6013C45.5214 7.46435 38.6584 4.57488 31.5 4.56682Z"
+        fill="#EAB472"></path>
+    </symbol>
+  </svg>
+  <script src="./swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
