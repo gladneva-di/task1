@@ -1,5 +1,3 @@
-// import "./styles/main.scss";
-
 // swiper
 
 var Swipes = new Swiper(".cases__swiper", {
@@ -40,33 +38,60 @@ var Swipes = new Swiper(".cases__swiper", {
   },
 });
 
-Swipes.on('slideChange', function() {
-  document.querySelector(".menu__list_1").className = 'menu__list_1';
-  document.querySelector(".menu__list_1").classList.add(`active_style_${Swipes.realIndex}`);
-  document.querySelector(".menu__list_2").className = 'menu__list_2';
-  document.querySelector(".menu__list_2").classList.add(`active_${Swipes.realIndex}`);
+Swipes.on("slideChange", function () {
+  document.querySelector(".menu__list_1").className = "menu__list_1";
+  document
+    .querySelector(".menu__list_1")
+    .classList.add(`active_style_${Swipes.realIndex}`);
+  document.querySelector(".menu__list_2").className = "menu__list_2";
+  document
+    .querySelector(".menu__list_2")
+    .classList.add(`active_${Swipes.realIndex}`);
 });
 
 // burger
 
-const burger = document.querySelector('.burger');
+const burger = document.querySelector(".burger");
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
 });
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
     document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
+      behavior: "smooth",
+      block: "start",
+    });
+  });
 }
+
+// animation to scroll
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function animateScrollingElements() {
+  const elements = document.querySelectorAll(".element-to-animate");
+  elements.forEach((element) => {
+    if (isElementInViewport(element)) {
+      element.classList.add("animated");
+    }
+  });
+}
+document.addEventListener("DOMContentLoaded", animateScrollingElements);
+window.addEventListener("scroll", animateScrollingElements);
