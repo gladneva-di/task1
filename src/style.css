@@ -308,7 +308,7 @@ body {
   column-gap: 44px;
   padding-left: 98px;
   margin-bottom: 68px;
-  margin-top: -35px;
+  margin-top: -25px;
 }
 .second__block {
   padding-top: 50px;
@@ -931,6 +931,9 @@ body {
   }
   .second__block_contacts {
     max-width: 272px;
+  }
+  .cases__swiper_wrap {
+    margin-top: -15px;
   }
   .slide__text-first {
     margin-right: 0;
