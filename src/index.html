@@ -18,9 +18,7 @@
       <div id="begin" class="block first__block">
         <div class="header__block inner">
           <a href="#begin">
-            <svg class="logo">
-              <use xlink:href="#logo"></use>
-            </svg>
+            <img src="./images/logo_top.svg" class="logo">
           </a>
           <h1>soleum trading</h1>
           <button class="burger">
@@ -50,12 +48,12 @@
               <li><a href="#contact_us" class="menu_link"><span>(05)</span>Contact us</a></li>
             </ul>
           </div>
-          <div class="main__right-side">
+          <div class="main__right-side element-to-animate">
             <p class="main__right-side-info">Energize<br> the&nbsp;world with our<br> premium oil</p>
             <p class="copyright">All rights reserved <span>©2024</span></p>
           </div>
         </div>
-        <a href="#our_products" class="scroll__down">Scroll down</a>
+        <a href="#our_products" class="scroll__down element-to-animate">Scroll down</a>
 
       </div>
       <div id="our_products" class="block second__block">
@@ -63,80 +61,82 @@
           <div class="menu__block">
             <span>Our products:</span>
             <ul class="menu__list menu__list-1">
-              <li class="menu__list_1"><span>(01)</span> gasoil</li>
+              <li class="menu__list_1 active_style_0"><span>(01)</span> gasoil</li>
               <li class="menu__list_2"><span>(02)</span> naphta</span></li>
             </ul>
           </div>
           <!-- Slider main container -->
-          <div class="cases__swiper_wrap inner">
-            <div class="swiper cases__swiper">
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="swiper-slide_item">
-                    <h1 class="swiper-slide_title  element-to-animate">gasoil</h1>
-                    <div class="image__block">
-                      <div class="card first__card">
-                        <svg class="card_icon">
-                          <use xlink:href="#card_icon"></use>
-                        </svg>
-                        <p class="card__text element-to-animate">Straight run gasoil.<br> High Sulphur gasoil (HSGO)</p>
-                      </div>
-                      <div class="card second__card">
-                        <img src="./images/second__card.png">
+          <div class="swiper__box">
+            <h1 class="swiper-slide_title swiper-slide_title1 element-to-animate">gasoil</h1>
+            <h1 id="fittext2" class="swiper-slide_title swiper-slide_title2 element-to-animate">naphtha</h1>
+            <div class="cases__swiper_wrap inner">
+              <div class="swiper cases__swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="swiper-slide_item">
+                      <div class="image__block">
+                        <div class="card first__card">
+                          <div class="card_icon__box">
+                            <svg class="card_icon">
+                              <use xlink:href="#card_icon"></use>
+                            </svg>
+                          </div>
+                          <p class="card__text card__text1 element-to-animate">Straight run gasoil.<br> High Sulphur gasoil (HSGO)
+                          </p>
+                        </div>
+                        <div class="card second__card">
+                          <img src="./images/second__card.png">
+                        </div>
                       </div>
                     </div>
-                    <p class="slide__text-first slide1__text-first element-to-animate">Suitable for a variety of
-                      industrial applications,
-                      our gasoil is the energy solution businesses rely on for efficient and reliable operation.</p>
-                    <p class="slide__text-second slide1__text-second element-to-animate">Gasoil, a key component in the
-                      global energy mix,
-                      powers industries and vehicles across the globe. At Soleum Trading, our gasoil stands out for its
-                      quality and consistency, meeting rigorous international standards.</p>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-slide_item">
-                    <h1 class="swiper-slide_title element-to-animate">naphta</h1>
-                    <div class="image__block">
-                      <div class="first__card">
-                        <svg class="card_icon">
-                          <use xlink:href="#card_icon"></use>
-                        </svg>
-                        <p class="card__text"><span>naphta</span> <br>the versatile hydrocarbon mixture</p>
-                      </div>
-                      <div class="second__card">
-                        <img src="./images/second__card-2.png">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide_item">
+                      <div class="image__block">
+                        <div class="card first__card">
+                          <div class="card_icon__box">
+                            <svg class="card_icon">
+                              <use xlink:href="#card_icon"></use>
+                            </svg>
+                          </div>
+                          <p class="card__text card__text2 element-to-animate"><span>naphta</span> <br>the versatile hydrocarbon mixture</p>
+                        </div>
+                        <div class="card second__card">
+                          <img src="./images/second_card_2.png">
+                        </div>
                       </div>
                     </div>
-                    <p class="slide__text-first slide2__text-first element-to-animate">
-                      Naphtha — the versatile hydrocarbon mixture, is essential in the production of high-value
-                      petrochemicals and as a heavy plant fuel.
-                    </p>
-                    <p class="slide__text-second slide2__text-second element-to-animate">Our naphtha product line is
-                      characterized by its
-                      purity and adaptability, making it a preferred choice for industry leaders in petrochemical
-                      manufacturing. At Soleum Trading, we ensure our naphtha facilitates smooth production processes
-                      and innovation in petrochemical industries.</p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="cases__swiper-button-box">
-              <div class="cases__swiper-button cases__swiper-button-prev">
-                <img class="swiper__arrow_left" src="./images/arrow_left.svg">
+              <!-- If we need navigation buttons -->
+              <div class="cases__swiper-button-box">
+                <div class="cases__swiper-button cases__swiper-button-prev">
+                  <img class="swiper__arrow_left" src="./images/arrow_left.svg">
+                </div>
+                <div class="cases__swiper-button cases__swiper-button-next">
+                  <img class="swiper__arrow_right" src="./images/arrow_right.svg">
+                </div>
               </div>
-              <div class="cases__swiper-button cases__swiper-button-next">
-                <img class="swiper__arrow_right" src="./images/arrow_right.svg">
-              </div>
-            </div>
 
-            <!-- If we need scrollbar -->
+              <!-- If we need scrollbar -->
+            </div>
+            <p class="slide__text-first slide1__text-first element-to-animate">Suitable for a variety of
+              industrial applications,
+              our gasoil is the energy solution businesses rely on for efficient and reliable operation.</p>
+            <p class="slide__text-first slide2__text-first element-to-animate">Naphtha — the versatile hydrocarbon mixture, is essential in the production of high-value petrochemicals and as a heavy plant fuel.</p>
+            <p class="slide__text-second slide1__text-second element-to-animate">Gasoil, a key component in
+              the
+              global energy mix,
+              powers industries and vehicles across the globe. At Soleum Trading, our gasoil stands out for
+              its
+              quality and consistency, meeting rigorous international standards.</p>
+            <p class="slide__text-second slide2__text-second element-to-animate"><span>Our naphtha product line is characterized by its purity and adaptability, making it a preferred choice for industry leaders in petrochemical manufacturing.</span><span>At Soleum Trading, we ensure our naphtha facilitates smooth production processes and innovation in petrochemical industries.</span></p>
           </div>
         </div>
         <a href="mailto:legal@soleumtrading.ae" class="second__block_contacts">
@@ -210,7 +210,7 @@
                 dynamics, enables us to navigate
                 the complexities of global trade, delivering value and reliability to our partners and clients</p>
             </div>
-            <a href="#our_products">
+            <a href="#our_products" class="fifth__block_our-products">
               <span class="fifth__block_item-link element-to-animate">
                 View our products
               </span>
@@ -228,7 +228,7 @@
             <p class="sixth__block_item copyright element-to-animate">All rights reserved <span>©2024</span></p>
           </div>
           <div>
-            <h2 id="fittext" class="sixth__block_mail element-to-animate">legal@soleumtrading.ae</h2>
+            <h2 id="fittext1" class="sixth__block_mail element-to-animate">legal@soleumtrading.ae</h2>
           </div>
         </div>
       </div>
@@ -239,15 +239,6 @@
   </div>
   <!-- svg спрайты -->
   <svg width="0" height="0" class="hidden">
-    <!-- logo -->
-    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 47" id="logo">
-      <path
-        d="M29.0323 25.9954C28.8807 25.3868 28.6086 24.8247 28.2365 24.3514C27.885 23.898 27.4627 23.521 26.9905 23.2389C26.6042 23.0232 26.2049 22.8382 25.7957 22.6854C25.4476 22.5504 25.0903 22.4478 24.7273 22.3785C23.8391 22.2168 22.615 22.0332 21.0623 21.8305C19.5097 21.6277 18.5095 21.4907 18.0033 21.4112C17.6029 21.3584 17.2126 21.2335 16.8474 21.0413C16.6757 20.9605 16.5189 20.8443 16.385 20.6988C16.3098 20.5412 16.2849 20.3594 16.3144 20.1836C16.3528 19.9976 16.4372 19.8275 16.5578 19.6932C16.9798 19.2628 17.4925 18.961 18.0471 18.8163C18.8448 18.569 19.6709 18.4582 20.4978 18.4875C21.3126 18.4888 22.1236 18.6123 22.9094 18.8547C23.5737 19.0511 24.2028 19.3755 24.7687 19.8137C25.1791 20.1392 25.5337 20.5459 25.8151 21.0139L26.1364 21.5619L29.0299 19.315L28.6575 18.7807C27.8273 17.6142 26.7434 16.709 25.5109 16.1529C24.1245 15.4879 22.6372 15.1298 21.1305 15.098C17.064 15.0021 14.3895 16.1118 13.18 18.4245C12.7584 19.2021 12.5866 20.119 12.6933 21.0221C12.8147 21.8804 13.1914 22.6668 13.7616 23.2526C14.5029 23.9868 15.3997 24.4936 16.3656 24.724C17.8268 25.0834 19.307 25.337 20.7971 25.483C21.8212 25.5863 22.8399 25.75 23.8488 25.9735C24.3121 26.042 24.7498 26.2524 25.1143 26.5818C25.2281 26.6994 25.3192 26.8421 25.3819 27.001C25.4308 27.1335 25.45 27.2775 25.4379 27.4203C25.4106 27.5656 25.3463 27.6989 25.253 27.8039C25.0668 28.0295 24.8458 28.2152 24.6008 28.3519C23.805 28.7684 22.6928 28.9657 21.2887 28.8999C20.0429 28.8873 18.8082 28.6342 17.6383 28.1519C17.2105 27.9535 16.8027 27.7046 16.4215 27.4093C16.1588 27.229 15.9097 27.0247 15.6768 26.7983L15.4165 26.4914L15.0879 26.0776L12.2188 28.4286L12.6617 29.1082C12.8376 29.336 13.0332 29.5434 13.2457 29.7274C13.5615 30.0295 13.8922 30.3113 14.2362 30.5714C15.2162 31.2538 16.2967 31.7335 17.4266 31.988C18.6779 32.3032 19.9554 32.4676 21.2376 32.4785H21.3349C22.5276 32.483 23.7172 32.3425 24.8831 32.0593C25.89 31.8551 26.8398 31.3856 27.6549 30.6892C28.2679 30.1259 28.7262 29.378 28.9763 28.5328C29.2197 27.7207 29.2392 26.8448 29.0323 26.0201V25.9954Z"
-        fill="#3C5851"></path>
-      <path
-        d="M20.442 46.464C15.0222 46.4575 9.8261 44.0304 5.99373 39.7153C2.16136 35.4002 0.0057976 29.5495 0 23.4471C0.0057976 17.3446 2.16136 11.494 5.99373 7.17888C9.8261 2.86379 15.0222 0.436704 20.442 0.430176C25.8618 0.436704 31.0579 2.86379 34.8903 7.17888C38.7227 11.494 40.8782 17.3446 40.884 23.4471C40.8782 29.5495 38.7227 35.4002 34.8903 39.7153C31.0579 44.0304 25.8618 46.4575 20.442 46.464ZM20.442 3.71831C15.7966 3.72411 11.3428 5.80453 8.05798 9.50314C4.77313 13.2017 2.92544 18.2165 2.92029 23.4471C2.92544 28.6777 4.77313 33.6924 8.05798 37.391C11.3428 41.0896 15.7966 43.1701 20.442 43.1759C25.0875 43.1701 29.5412 41.0896 32.8261 37.391C36.1109 33.6924 37.9586 28.6777 37.9638 23.4471C37.9586 18.2165 36.1109 13.2017 32.8261 9.50314C29.5412 5.80453 25.0875 3.72411 20.442 3.71831Z"
-        fill="#3C5851"></path>
-    </symbol>
     <!-- card icon -->
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="card_icon">
       <circle cx="12" cy="12" r="12" fill="#EAB472"></circle>
@@ -282,7 +273,8 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="jquery.fittext.js"></script>
   <script type="text/javascript">
-    $("#fittext").fitText(1.4, { minFontSize: '10px', maxFontSize: '130px' });
+    $("#fittext1").fitText(1.4, { minFontSize: '10px', maxFontSize: '130px' });
+    // $("#fittext2").fitText(0.2, { minFontSize: '10px', maxFontSize: '200px' });
   </script>
 </body>
 

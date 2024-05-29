@@ -2,6 +2,7 @@
 
 var Swipes = new Swiper(".cases__swiper", {
   loop: true,
+  speed: 500,
   navigation: {
     nextEl: ".cases__swiper_wrap .cases__swiper-button-next",
     prevEl: ".cases__swiper_wrap .cases__swiper-button-prev",
@@ -38,15 +39,26 @@ var Swipes = new Swiper(".cases__swiper", {
   },
 });
 
-Swipes.on("slideChange", function () {
+Swipes.on("slideChange", function (e) {
   document.querySelector(".menu__list_1").className = "menu__list_1";
-  document
-    .querySelector(".menu__list_1")
-    .classList.add(`active_style_${Swipes.realIndex}`);
+  document.querySelector(".menu__list_1").classList.add(`active_style_${Swipes.realIndex}`);
+
+  document.querySelector(`.swiper-slide_title${Swipes.realIndex + 1}`).style.display = "block";
+  document.querySelector(`.slide${Swipes.realIndex + 1}__text-first`).style.display = "block";
+  document.querySelector(`.slide${Swipes.realIndex + 1}__text-second`).style.display = "block";
+
+  if (Swipes.realIndex === 0) {
+    document.querySelector(".swiper-slide_title2").style.display = "none";
+    document.querySelector(".slide2__text-first").style.display = "none";
+    document.querySelector(".slide2__text-second").style.display = "none";
+  } else if (Swipes.realIndex === 1) {
+    document.querySelector(".swiper-slide_title1").style.display = "none";
+    document.querySelector(".slide1__text-first").style.display = "none";
+    document.querySelector(".slide1__text-second").style.display = "none";
+  }
+
   document.querySelector(".menu__list_2").className = "menu__list_2";
-  document
-    .querySelector(".menu__list_2")
-    .classList.add(`active_${Swipes.realIndex}`);
+  document.querySelector(".menu__list_2").classList.add(`active_${Swipes.realIndex}`);
 });
 
 // burger
